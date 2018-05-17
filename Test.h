@@ -17,7 +17,6 @@ public:
     ~Test() = default;
 
     void run_tests(int from_N, int to_N, int times);
-    void generate(int N, FlatSpace &FS);
     float get_average();
     float get_sigma();
 
@@ -25,6 +24,8 @@ private:
     int seed;
     float average;
     float sigma;
+
+    void generate(int N, FlatSpace &FS);
 };
 
 
